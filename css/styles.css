@@ -70,9 +70,8 @@ letter-spacing: 0.02em;
 .studio::after {
 display: block;
 content: "";
-width: 47px;
+width: 100%;
 height: 4px;
-margin-top: 28px;
 background: #2196F3;
 border-radius: 2px;
 }
@@ -80,9 +79,8 @@ border-radius: 2px;
 .portf::after {
   display: block;
   content: "";
-  width: 77px;
+  width: 100%;
   height: 4px;
-  margin-top: 28px;
   background: #2196F3;
   border-radius: 2px;
   }
@@ -171,7 +169,7 @@ margin-right: 268px ;
 .navigation-list-link.link {
   color: var(--text-main-color);
   padding-top: 32px;
-  /* padding-bottom: 32px */
+  padding-bottom: 32px
  }
 
 .navigation-list-link:hover,
