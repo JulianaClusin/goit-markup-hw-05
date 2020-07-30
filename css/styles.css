@@ -140,6 +140,7 @@ margin-right: 268px ;
 .address-nav-link:hover,
 .address-nav-link:focus {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list,.address {
@@ -160,7 +161,14 @@ margin-right: 268px ;
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
+  transition: background-color 1030ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .navigation-list-link.studio:hover::after ,
+  .navigation-list-link.portf:hover::after  {
+   background-color: var(--text-address-color);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
   .navigation-list-item {
     position: relative;
@@ -169,6 +177,13 @@ margin-right: 268px ;
   .navigation-list-link.studio,
   .navigation-list-link.portf {
     color: var(--accent-color);
+    transition: color 1030ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .navigation-list-link.studio:hover,
+  .navigation-list-link.portf:hover {
+  color: var(--text-address-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   
@@ -205,6 +220,7 @@ letter-spacing: 0.02em;
 .address-nav-link:hover .address-nav-list-svg,
 .address-nav-link:focus .address-nav-list-svg {
 fill: var(--accent-color);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* HERO */
@@ -270,6 +286,7 @@ border-color: var(--accent-color);
 .hero-title-button.hero:hover,
 .hero-title-button.hero:focus {
   color: var(--text-white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FEATURES */
@@ -470,12 +487,14 @@ margin-right: 0px; */
 .social-link-item:hover .social-link-svg ,
 .social-link-item:focus .social-link-svg {
 fill:var(--text-white-color);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .social-link-item:hover,
 .social-link-item:focus {
   background-color: var(--accent-color);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:not(:last-child) {
@@ -498,6 +517,7 @@ fill:var(--text-white-color);
 .clients-list-logo:hover .clients-list-logo-svg,
 .clients-list-logo:focus .clients-list-logo-svg {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo {
@@ -512,6 +532,7 @@ fill:var(--text-white-color);
 .clients-list-logo:hover,
 .clients-list-logo:focus {
   border: 1px solid var(--accent-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo-svg {
@@ -599,6 +620,7 @@ background-color: rgba(255, 255, 255, 0.1);
 .social-link-item.bottom:hover,
 .social-link-item.bottom:focus {
 background-color:var(--accent-color);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-in-svg {
@@ -671,15 +693,12 @@ background-color:var(--title-section-theme-color);
   margin-right: 8px;
 }
 
-.work-button button:focus {
+.work-button button:focus, .work-button button:hover {
 color:var(--text-white-color);
 outline: none;
 background-color:var(--accent-color);
-}
-
-.work-button button:hover {
-color:var(--text-white-color);
-background-color:var(--accent-color);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio.list {
@@ -713,6 +732,7 @@ background-color:var(--accent-color);
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 
   0px 4px 4px rgba(0, 0, 0, 0.06), 
   0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
