@@ -580,12 +580,12 @@ display: block;
 color:var(--text-white-color)
 }
 
-.address-footer.text {
-  margin-bottom: 9px;
+.address-nav-link-footer {
+color: rgba(255, 255, 255, 0.6);
 }
 
-.address-nav-link-footer {
-color:var(--text-white-color);
+.address-footer.text {
+  margin-bottom: 9px;
 }
 
 .address-nav-link-footer.mail {
